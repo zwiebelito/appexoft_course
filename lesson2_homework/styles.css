@@ -1,0 +1,73 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #dceff5;
+    margin: 0;
+}
+
+p {
+    width: 30%;
+    margin: 20px 0 20px 20px;
+    padding: 10px;
+    color: red; /*do not have a priority*/
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+header {
+    text-align: center;
+    margin: 50px;
+}
+
+header::after {
+    content: url("images/css.png");
+}
+
+footer {
+    text-align: end;
+    padding: 10px;
+    margin: 30px;
+}
+
+ul {
+    line-height: 40px;
+    margin: 30px;
+    list-style: url("images/heart.png");
+    width: 10%;
+    border: 2px solid #8256af;
+    border-radius: 10px;
+    background: #e2ecef;
+}
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    color: #05a884;
+}
+
+ul li:first-child {
+    font-weight: 600;
+    color: #148067;
+}
+
+ul li{
+    transition: 0.3s ease;
+    font-weight: 400;
+    color: #b4816f;
+}
+
+ul li:hover {
+    transition: 0.3s ease;
+    color: black;
+}
+
+.info {
+    color: #8256af;
+}
+
+h4 {
+    font-family: 'Courier New', serif;
+    color: #05a884;
+}
