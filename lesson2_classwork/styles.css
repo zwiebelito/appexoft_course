@@ -1,0 +1,106 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+    div {
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+    margin-bottom: 10px;
+}
+
+div[data-box=box1]{
+    background: darkgreen;
+}
+
+h1::before, h1::after {
+    padding: 5px 50px;
+    content: "5";
+    background-color: red;
+}
+
+.boxbox {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+    margin: 100px;
+    border: red 5px solid;
+}
+
+.uppercase::first-letter {
+    text-transform: capitalize;
+}
+
+a {
+    font-size: 30px;
+    margin: 300px 0 0 300px;
+}
+
+a:hover {
+    cursor: copy;
+    color: rebeccapurple;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: coral;
+}
+
+ol {
+    font-size: 30px;
+}
+
+ol li:nth-child(2n)::first-letter{
+    color: green;
+    font-size: 20px;
+}
+
+.position {
+    width: 300px;
+    height: 300px;
+    background-color: darkolivegreen;
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+    top: 350px;
+    left: 350px;
+} */
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: cadetblue;
+}
+
+.formWrap {
+    width: 400px;
+    background: white;
+    margin-top: 10vh;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: cadetblue;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}

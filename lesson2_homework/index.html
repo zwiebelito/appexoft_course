@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2 homework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="acme global company" width="200px" height="110px">
+        </div>
+            <div class="wrap-info">
+                <h1>ACME GLOBAL COMPANY</h1>
+                <p>123 Maple Street, Houston, TX, 77002</p>
+                <p>example@example.com</p>
+                <p>www.example.com</p>
+                <p>(123) 1234567</p>
+            </div>
+    </header>
+    <div class="stripe"></div>
+    <form>
+        <h3>NEW CUSTOMER REGISTRATION FORM</h3>
+        <h4>Customer Details:</h4>
+        <p class="full-name">Full Name</p>
+        <div class="wrap-name">
+            <label for="firstname">
+                <input type="text" name="firstname" id="firstname"><br>
+                First Name
+            </label>
+            <label for="lastname">
+                <input type="text" name="lastname" id="lastname"><br>
+                Last Name
+            </label>
+        </div>
+        <p class="address">Address:</p>
+        <div class="wrap-address">
+            <label for="street">
+                <input type="text" name="street" id="street"><br>
+                Street Address
+            </label>
+            <br><br>
+            <label for="street">
+                <input type="text" name="street"><br>
+                Street Address Line 2
+            </label>
+            <br><br>
+            <div class="wrap-city">
+                <label for="city">
+                    <input type="text" name="city" id="city"><br>
+                    City
+                </label>
+                <label for="state">
+                    <input type="text" name="state" id="state"><br>
+                    State / Province
+                </label>
+            </div>
+            <label for="zipcode">
+                <input type="text" name="zipcode" id="zipcode"><br>
+                Postal / Zip Code
+            </label><br><br>
+            </div>
+        <div class="wrap-contact">
+            <div class="wrap-phone">
+                <p class="phone">Phone Number</p>
+                <label for="phone">
+                    <input placeholder="(000) 000-0000" type="text" name="phone" id="phone"><br>
+                </label>
+            </div>
+            <div class="wrap-email">
+                <p class="email">Email</p>
+                <label for="email">
+                    <input placeholder="ex: email@yahoo.com" type="email" name="email" id="email"><br>
+                    example@example.com
+                </label>
+            </div>
+        </div>
+        <div class="second_stripe"></div>
+        <div class="wrap-hear">
+            <p class="hear">How did you hear about us?</p>
+            <label for="marketing">
+                <select name="marketing" id="marketing">
+                    <option value="">Please select</option>
+                    <option value="telegram">Telegram</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div class="wrap-feedback">
+            <p class="feedback">Feedback about us:</p>
+            <label for="feedback">
+                <textarea id="feedback"></textarea>
+            </label>
+        </div>
+        <br>
+        <div class="wrap-suggest">
+            <p class="suggest">Suggestions if any for further improvement:</p>
+            <label for="suggest">
+                <textarea id="suggest"></textarea>
+            </label>
+        </div>
+        <br>
+        <div class="wrap-poll">
+            <p class="poll">Will you be willing to recommend us?</p>
+            <label for="yes">
+                <input type="radio" name="poll" id="yes">
+            </label> Yes
+            <br>
+            <label for="no">
+                <input type="radio" name="poll" id="no">
+            </label> No
+            <br>
+            <label for="maybe">
+                <input type="radio" name="poll" id="maybe">
+            </label> Maybe
+            <br>
+        </div>
+        <br>
+        <div class="wrap-table">
+            <p class="descr-table">Please give reference of any two people whom you feel:</p>
+            <br>
+            <table>
+                <tr class="first-tr">
+                    <td></td>
+                    <td><label for="fullname-table">Full Name</label></td>
+                    <td><label for="address-table">Address</label></td>
+                    <td><label for="phone-table">Contact Number</label></td>
+                </tr>
+                <tr class="second-tr">
+                    <td>1</td>
+                    <td><input type="text" name="fullname-table" id="fullname-table"></td>
+                    <td><input type="text" name="address-table" id="address-table"></td>
+                    <td><input type="text" name="phone-table" id="phone-table"></td>
+                </tr>
+                <tr class="third-tr">
+                    <td>2</td>
+                    <td>
+                        <label for="fullname2-table">
+                            <input type="text" name="fullname-table" id="fullname2-table">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="address2-table">
+                            <input type="text" name="address-table" id="address2-table">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="phone2-table">
+                            <input type="text" name="phone-table" id="phone2-table">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+    </form>
+    <div class="stripe"></div>
+    <button type="submit">Submit</button>
+</body>
+</html>
