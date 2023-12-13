@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'tailwindcss/tailwind.css';
+import ReactPaginate from "react-paginate";
 
 class ApiComponent extends Component {
     constructor(props) {
@@ -9,6 +10,8 @@ class ApiComponent extends Component {
             data: null,
             isLoading: true,
             error: null,
+            currentPage: 0,
+            itemsPerPage: 2,
         };
     }
 
@@ -23,7 +26,7 @@ class ApiComponent extends Component {
             .then(data => {
                 this.setState({
                     data: data,
-                    isLoading: false,
+                    isLoading: false
                 });
             })
             .catch(error => {
@@ -34,8 +37,17 @@ class ApiComponent extends Component {
             });
     }
 
+    handlePageClick = (selectedPage) => {
+        this.setState({ currentPage: selectedPage.selected });
+    };
+
+
     render() {
-        const { data, isLoading, error } = this.state;
+
+        const { data, isLoading, error, currentPage, itemsPerPage } = this.state;
+
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
 
         return (
             <div className="container mx-auto p-8">
@@ -46,11 +58,23 @@ class ApiComponent extends Component {
                 {error && <p className="text-red-500">Error: {error.message}</p>}
 
                 {data && (
-                    <ul className="list-disc pl-4">
-                        {data.map(user => (
-                            <li key={user.id} className="text-blue-500">{user.name}</li>
-                        ))}
-                    </ul>
+                    <div>
+                        <ul className="list-disc pl-4 mb-4">
+                            {data.slice(startIndex, endIndex).map((user) => (
+                                <li key={user.id} className="text-blue-500">{user.name}</li>
+                            ))}
+                        </ul>
+                        <ReactPaginate
+                            pageCount={Math.ceil(data.length / itemsPerPage)}
+                            marginPagesDisplayed={1}
+                            onPageChange={this.handlePageClick}
+                            containerClassName="flex justify-start gap-5 items-center w-300
+                            text-red-400 font-bold"
+                            pageClassName='hover:text-red-300'
+                            previousClassName='hover:text-red-300'
+                            nextClassName='hover:text-red-300'
+                        />
+                    </div>
                 )}
             </div>
         );
