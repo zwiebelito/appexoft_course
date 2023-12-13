@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main p {
+    width: 60%;
+    text-align: center;
+}
+
+.main button {
+    border: none;
+    transition: ease 0.3s;
+    color: blanchedalmond;
+    font-size: 16px;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.main button:hover{
+    background-color: #6fa8a9;
+    transition: ease 0.3s;
+}
