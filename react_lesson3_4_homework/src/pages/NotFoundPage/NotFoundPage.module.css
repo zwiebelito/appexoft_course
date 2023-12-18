@@ -1,0 +1,9 @@
+.not {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    color: darkslateblue;
+    font-size: 32px;
+    font-weight: 900;
+}
