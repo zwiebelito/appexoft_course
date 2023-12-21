@@ -10,8 +10,8 @@ const Header = () => {
                 <NavLink to={'/movies'}>Movies</NavLink>
                 <NavLink to={'/favourites'}>Favourites</NavLink>
             </div>
-            <div>
-                <Search />
+            <div className={styles.title}>
+                Find your movie
             </div>
         </div>
     );

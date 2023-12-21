@@ -5,7 +5,7 @@ import styles from './Movies.module.css'
 const Movies = ({movies}) => {
     return (
         <div className={styles.moviesWrap}>
-            {movies.map((movie) => <Movie movie={movie} key={movie.id}/>)}
+            {movies && movies.map((movie) => <Movie movie={movie} key={movie.id}/>)}
         </div>
     );
 };

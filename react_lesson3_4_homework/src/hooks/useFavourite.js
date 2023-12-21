@@ -29,7 +29,7 @@ const useFavourite = (movie) => {
         const updatedFavorites = existingFavorites.filter((fav) => fav.id !== movie.id);
         localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
         setAddedToFavorites(false);
-        window.location.reload()
+        /*window.location.reload()*/
     };
 
 

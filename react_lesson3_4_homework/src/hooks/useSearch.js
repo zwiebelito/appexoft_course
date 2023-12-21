@@ -1,22 +1,19 @@
 import React, {useEffect, useState} from 'react';
-import {moviesService} from "../services/moviesService";
+import {genresService} from "../services/genresService";
+import {useData} from "./useData";
 
 const useSearch = () => {
-    const [query, setQuery] = useState('');
-    const [movies, setMovies] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(0);
+    const { movies, setMovies, page, setPage, setTotalPages, totalPages, setSelectedGenre, setSortCriterion,
+        selectedGenre, sortCriterion, genres, setGenres, query, setQuery} = useData()
 
-    useEffect(()=> {
-        moviesService.getSearch(query)
-            .then(({data}) => {
-                setMovies(data.results)
-                setTotalPages(data.total_pages);
-            })
-    }, [query])
+    useEffect(() => {
+        genresService.getGenres().then(({data}) => {
+            setGenres(data.genres);
+        })
+    }, [])
 
     return (
-        {query, setQuery, movies, setMovies, currentPage, setCurrentPage, totalPages, setTotalPages}
+        {query, setQuery, movies, setMovies, totalPages, setTotalPages, page, setPage, genres, setGenres, sortCriterion, setSortCriterion, selectedGenre, setSelectedGenre}
     );
 };
 

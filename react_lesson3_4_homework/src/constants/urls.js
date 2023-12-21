@@ -7,10 +7,38 @@ const movies = '/discover/movie';
 const genres = 'genre/movie/list'
 const search = 'search/movie'
 
+const options = [
+    {
+        id: 'popularity.desc',
+        title: 'The most popular'
+    },
+    {
+        id: 'popularity.asc',
+        title: 'The less popular'
+    },
+    {
+        id: 'vote_average.desc',
+        title: 'Excellent rating'
+    },
+    {
+        id: 'vote_average.asc',
+        title: 'Poor rating'
+    },
+    {
+        id: 'primary_release_date.desc',
+        title: 'The newest'
+    },
+    {
+        id: 'primary_release_date.asc',
+        title: 'The oldest'
+    }
+];
+
 const urls = {
     movies,
     genres,
-    search
+    search,
+    options
 }
 
 export {

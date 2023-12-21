@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
-.page {
-    position: relative;
-    left: 100px;
-    top: 10px;
+.results {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
     color: darkslateblue;
-    font-weight: 500;
-    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.none {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: crimson;
 }
 
 .loading {

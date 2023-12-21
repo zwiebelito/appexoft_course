@@ -3,7 +3,7 @@ import {NotFoundPage} from "./pages/NotFoundPage/NotFoundPage";
 import {MoviesPage} from "./pages/MoviesPage/MoviesPage";
 import {MainLayout} from "./layouts/MainLayout";
 import {FavouritesPage} from "./pages/FavouritesPage/FavouritesPage";
-import {SearchMoviesPage} from "./pages/SearchMoviesPage/SearchMoviesPage";
+import {SearchPage} from "./pages/SearchPage/SearchPage";
 
 const router = createBrowserRouter([
     {
@@ -27,8 +27,8 @@ const router = createBrowserRouter([
                 element: <FavouritesPage/>
             },
             {
-                path: '/search-movie',
-                element: <SearchMoviesPage/>
+                path: 'search',
+                element: <SearchPage />
             }
         ]
     }

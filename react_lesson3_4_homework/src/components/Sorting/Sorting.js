@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './Sorting.module.css'
+import {urls} from "../../constants/urls";
 
 const Sorting = ({sortCriterion, selectedGenre, genres, handleSortChange, handleGenreChange}) => {
+    const options = urls.options;
     return (
         <div className={styles.filter}>
             <div className={styles.genre}>
@@ -18,12 +20,7 @@ const Sorting = ({sortCriterion, selectedGenre, genres, handleSortChange, handle
             <div className={styles.sort}>
                 <label>Sort by: </label>
                 <select id="sortDropdown" value={sortCriterion} onChange={handleSortChange}>
-                    <option value="popularity.desc">Popularity Desc</option>
-                    <option value="popularity.asc">Popularity Asc</option>
-                    <option value="vote_average.desc">Vote Average Desc</option>
-                    <option value="vote_average.asc">Vote Average Asc</option>
-                    <option value="primary_release_date.desc">Release date Desc</option>
-                    <option value="primary_release_date.asc">Release date Asc</option>
+                    {options.map(option => <option key={option.id} value={option.id}>{option.title}</option>)}
                 </select>
             </div>
         </div>

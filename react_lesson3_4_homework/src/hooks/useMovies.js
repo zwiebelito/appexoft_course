@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {moviesService} from "../services/moviesService";
 import {genresService} from "../services/genresService";
+import {useData} from "./useData";
 
 const useMovies = () => {
-    const [movies, setMovies] = useState([])
-    const [page, setPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(0);
-    const [genres, setGenres] = useState([])
-    const [sortCriterion, setSortCriterion] = useState('popularity.desc');
-    const [selectedGenre, setSelectedGenre] = useState(null);
+   const {movies, setMovies, page, setPage, setTotalPages, totalPages, genres, setSelectedGenre, setSortCriterion,
+       selectedGenre, sortCriterion, setGenres} = useData()
 
     useEffect(()=> {
         moviesService.getAll(sortCriterion, page, selectedGenre).then(({data}) => {

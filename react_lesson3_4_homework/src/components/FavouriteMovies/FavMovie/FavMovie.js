@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useFavourite} from "../../../hooks/useFavourite";
 import styles from './FavMovie.module.css'
 import {picture} from "../../../constants/urls";
@@ -10,6 +10,7 @@ const FavMovie = ({favMovie}) => {
     const date = new Date(release_date).getFullYear()
 
     const changedVoteAverage = vote_average.toString()
+
 
     return (
         <div className={styles.main}>

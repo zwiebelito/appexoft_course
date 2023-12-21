@@ -3,12 +3,14 @@ import {Movies} from "../../components/Movies/Movies";
 import {useMovies} from "../../hooks/useMovies";
 import {Pagination} from "../../components/Pagination/Pagination";
 import {Sorting} from "../../components/Sorting/Sorting";
-import styles from './MoviesPage.module.css'
+import {Search} from "../../components/Search/Search";
+import {useLoading} from "../../hooks/useLoading";
 
 const MoviesPage = () => {
     const {
         page, totalPages, setSortCriterion, setPage, setSelectedGenre, genres,
         movies, selectedGenre, sortCriterion} = useMovies()
+    const {loading, setLoading} = useLoading()
 
     const handleNextPage = () => {
         if (page < totalPages) {
@@ -32,7 +34,7 @@ const MoviesPage = () => {
 
     return (
         <div>
-            <span className={styles.page}>Page: {page}</span>
+            <Search />
             <Sorting handleSortChange={handleSortChange} handleGenreChange={handleGenreChange}
                      genres={genres} selectedGenre={selectedGenre} sortCriterion={sortCriterion}/>
             <Movies movies={movies}/>
