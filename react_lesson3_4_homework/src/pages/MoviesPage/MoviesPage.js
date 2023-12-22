@@ -15,12 +15,14 @@ const MoviesPage = () => {
     const handleNextPage = () => {
         if (page < totalPages) {
             setPage(page + 1);
+            window.scroll(0, 0)
         }
     };
 
     const handlePrevPage = () => {
         if (page > 1) {
             setPage(page - 1);
+            window.scroll(0, 0)
         }
     };
 

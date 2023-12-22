@@ -20,7 +20,7 @@ const Search = () => {
                        setQuery(e.target.value)
                    }}
             />
-            <button onClick={handleSearch}>Search</button>
+            <button disabled={query === ''} onClick={handleSearch}>Search</button>
         </div>
     );
 };
