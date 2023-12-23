@@ -7,7 +7,7 @@ const initialState = {
     contacts: []
 }
 
-const todoReducers = (state = initialState, action) => {
+export const todoReducer = (state = initialState, action) => {
     switch (action.type){
         case ADD_TASK:
             return {
@@ -43,7 +43,7 @@ export const contactReducer = (state = initialState, action) => {
 
 const rootReducers = combineReducers({
     contacts: contactReducer,
-    tasks: todoReducers
+    tasks: todoReducer
 })
 
 export {rootReducers}

@@ -5,8 +5,8 @@ import {Contact} from "./Contact/Contact";
 const App = () => {
   return (
       <div>
-       {/* <TodoList />*/}
-          <Contact />
+        <TodoList />
+          {/*<Contact />*/}
       </div>
   );
 };
