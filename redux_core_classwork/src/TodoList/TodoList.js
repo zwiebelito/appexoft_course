@@ -1,4 +1,3 @@
-/*
 import React from 'react';
 import {addTask, removeTask} from './action'
 import {connect} from "react-redux";
@@ -33,4 +32,4 @@ const mapStateProps = (state) => ({
         tasks: state.tasks
     })
 
-export default connect(mapStateProps, {addTask, removeTask})(TodoList)*/
+export default connect(mapStateProps, {addTask, removeTask})(TodoList)
