@@ -1,0 +1,30 @@
+.wrap {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+.wrap input {
+    padding-left: 5px;
+    height: 20px;
+    border: 2px solid darkslateblue;
+}
+
+.wrap input:focus {
+    outline: none;
+}
+
+.wrap button {
+    height: 25px;
+    border: none;
+    background-color: darkslateblue;
+    color: #dcd8d8;
+    font-size: 14px;
+}
+
+.wrap button:hover {
+    background-color: #7b74a4;
+}

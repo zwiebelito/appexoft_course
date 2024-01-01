@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin:  0 0 20px 0;
+}
+
+.buttons button {
+    height: 25px;
+    border: none;
+    background-color: darkslateblue;
+    color: #dcd8d8;
+    font-size: 14px;
+}
+
+.buttons button:disabled {
+    background-color: #474748;
+}
+
+.buttons button:hover {
+    background-color: #7b74a4;
+}
+
+.pages {
+    font-size: 18px;
+    font-weight: 500;
+    color: darkslateblue;
+}

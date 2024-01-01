@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+.results {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: darkslateblue;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.none {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: crimson;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    color: darkslateblue;
+    font-family: Silkscreen, sans-serif;
+    font-size: 24px;
+}
+
+.back {
+    height: 35px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: darkslateblue;
+    color: #dcd8d8;
+    font-size: 14px;
+}
+
+.back:hover {
+    background-color: #7b74a4;
+}
+
+.wrap {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.wrap img {
+    width: 35px;
+    height: 35px;
+}
+

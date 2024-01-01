@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+.page {
+    position: relative;
+    left: 100px;
+    top: 10px;
+    color: darkslateblue;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    color: darkslateblue;
+    font-family: Silkscreen, sans-serif;
+    font-size: 24px;
+}

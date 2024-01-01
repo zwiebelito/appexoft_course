@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+.Header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: darkslateblue;
+}
+
+.links a[class='active']{
+    color: red;
+}
+
+.title {
+    font-family: Silkscreen, sans-serif;
+    color: darkslateblue;
+    font-weight: 400;
+    font-size: 18px;
+}
